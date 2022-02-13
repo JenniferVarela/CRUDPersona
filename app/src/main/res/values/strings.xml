@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">CRUDPersona</string>
+    <string name="btn_guardar">Guardar</string>
+</resources>

@@ -2,6 +2,7 @@ package com.example.crudpersona.Clases;
 
 public class Personas {
 
+    private Integer id;
     private String nombres;
     private String apellidos;
     private Integer edad;
@@ -13,7 +14,8 @@ public class Personas {
     }
 
 
-    public Personas(String nombres, String apellidos, Integer edad, String correo, String direccion) {
+    public Personas(Integer id,String nombres, String apellidos, Integer edad, String correo, String direccion) {
+        this.id = id;
         this.nombres = nombres;
         this.apellidos = apellidos;
         this.edad = edad;
@@ -21,6 +23,13 @@ public class Personas {
         this.direccion = direccion;
     }
 
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
     public String getNombres() {
         return nombres;

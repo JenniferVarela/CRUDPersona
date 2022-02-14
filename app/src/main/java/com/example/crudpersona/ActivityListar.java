@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 
 import com.example.crudpersona.Clases.Personas;
@@ -23,6 +24,10 @@ public class ActivityListar extends AppCompatActivity {
     ListView lista;
     ArrayList<Personas> listaPersonas;
     ArrayList<String> ArregloPersonas;
+    Button albtnRegistrar;
+
+    /*Bloqueo el boton retroceder del telefono*/
+    @Override public void onBackPressed(){};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +48,18 @@ public class ActivityListar extends AppCompatActivity {
                 ObtenerPersona(i);
             }
         });
+
+        albtnRegistrar = (Button) findViewById(R.id.albtnRegistrar);
+
+        albtnRegistrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
 
     }
     private void ObtenerListaPersonas() {

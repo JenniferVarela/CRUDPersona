@@ -3,4 +3,6 @@
     <string name="btn_guardar">Guardar</string>
     <string name="btn_actualizar">Actualizar</string>
     <string name="btn_eliminar">Eliminar</string>
+    <string name="btn_listar">Listar</string>
+    <string name="btn_registrar">Registrar</string>
 </resources>

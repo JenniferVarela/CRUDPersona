@@ -6,6 +6,21 @@
     android:layout_height="match_parent"
     tools:context=".ActivityEdit">
 
+    <EditText
+        android:id="@+id/aetxtCodigo"
+        android:layout_width="81dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        android:editable="false"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.046" />
+
     <TextView
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
@@ -37,7 +52,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="textEmailAddress"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -63,7 +78,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -141,13 +156,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Datos Obtenidos"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintHorizontal_bias="0.064"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.037" />
+        app:layout_constraintVertical_bias="0.045" />
 
     <Button
         android:id="@+id/aebtnActualizar"

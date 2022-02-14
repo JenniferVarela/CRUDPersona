@@ -3,6 +3,7 @@ package com.example.crudpersona;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.ContentValues;
+import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
@@ -15,7 +16,7 @@ import com.example.crudpersona.Configuracion.Transacciones;
 
 public class MainActivity extends AppCompatActivity {
     EditText txtnombres,txtapellidos,txtedad,txtcorreo,txtdireccion;
-    Button btnguardar;
+    Button btnguardar,btnListar;
 
 
     @Override
@@ -34,6 +35,16 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 AgregarPersona();
+            }
+        });
+
+        btnListar = (Button) findViewById(R.id.btnListar);
+
+        btnListar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(),ActivityListar.class);
+                startActivity(intent);
             }
         });
     }

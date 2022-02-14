@@ -41,7 +41,7 @@
         android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="Edad"
-        android:inputType="textPersonName"
+        android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -54,7 +54,7 @@
         android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="Correo"
-        android:inputType="textPersonName"
+        android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -97,4 +97,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtDireccion"
         app:layout_constraintVertical_bias="0.157" />
+
+    <Button
+        android:id="@+id/btnListar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_listar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnguardar"
+        app:layout_constraintVertical_bias="0.191" />
 </androidx.constraintlayout.widget.ConstraintLayout>

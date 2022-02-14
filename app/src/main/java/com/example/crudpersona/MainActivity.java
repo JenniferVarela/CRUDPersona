@@ -18,7 +18,9 @@ public class MainActivity extends AppCompatActivity {
     EditText txtnombres,txtapellidos,txtedad,txtcorreo,txtdireccion;
     Button btnguardar,btnListar;
 
-
+    /*Bloqueo el boton retroceder del telefono*/
+    @Override public void onBackPressed(){};
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
